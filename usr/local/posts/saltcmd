@@ -1,0 +1,4 @@
+#/bin/bash
+date +%s.%N > /usr/local/etc/posts/saltping
+salt '*' test.ping >> /usr/local/etc/posts/saltping
+date +%s.%N >> /usr/local/etc/posts/saltping
